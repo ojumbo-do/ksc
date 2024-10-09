@@ -24,39 +24,43 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const aboutUsDropdown = document.getElementById("dropdownNavbar");
-  const aboutUs = document.getElementById("dropdownLargeButton");
+  const aboutUsDropdownBtn = document.getElementById("aboutUsDropdownButton");
+  const aboutUsDropdown = document.getElementById("aboutUsDropdown");
 
-  aboutUsDropdown.addEventListener("click", function (event) {
+  aboutUsDropdownBtn.addEventListener("click", function (event) {
     event.preventDefault();
-    aboutUs.classList.toggle("hidden");
+    aboutUsDropdown.classList.toggle("hidden");
   });
 
   document.addEventListener("click", function (event) {
     if (
-      !aboutUsDropdown.contains(event.target) &&
-      !aboutUs.contains(event.target)
+      !aboutUsDropdownBtn.contains(event.target) &&
+      !aboutUsDropdown.contains(event.target)
     ) {
-      aboutUs.classList.add("hidden");
+      aboutUsDropdown.classList.add("hidden");
     }
   });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const communicationCentreDropdown = document.getElementById("dropdown");
-  const communicationDropdown = document.getElementById("dropdownLargeButton");
+  const customerCentreDropdownButton = document.getElementById(
+    "customerCentreDropdownButton"
+  );
+  const customerCentreDropdown = document.getElementById(
+    "customerCentreDropdown"
+  );
 
-  communicationCentreDropdown.addEventListener("click", function (event) {
+  customerCentreDropdownButton.addEventListener("click", function (event) {
     event.preventDefault();
-    communicationDropdown.classList.toggle("hidden");
+    customerCentreDropdown.classList.toggle("hidden");
   });
 
   document.addEventListener("click", function (event) {
     if (
-      !communicationCentreDropdown.contains(event.target) &&
-      !communicationDropdown.contains(event.target)
+      !customerCentreDropdownButton.contains(event.target) &&
+      !customerCentreDropdown.contains(event.target)
     ) {
-      communicationDropdown.classList.add("hidden");
+      customerCentreDropdown.classList.add("hidden");
     }
   });
 });
