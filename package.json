@@ -1,7 +1,7 @@
 {
   "devDependencies": {
-    "tailwindcss": "^3.4.10",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "tailwindcss": "^3.4.13"
   },
   "dependencies": {
     "flowbite": "^2.5.1"
@@ -9,5 +9,23 @@
   "scripts": {
     "build:css": "tailwindcss build src/styles.css -o public/styles.css",
     "watch:tailwind": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
-  }
+  },
+  "name": "ksc_website_official",
+  "version": "1.0.0",
+  "description": "kenya seed company website",
+  "main": "tailwind.config.js",
+  "repository": {
+    "type": "git",
+    "url": "ksc"
+  },
+  "keywords": [
+    "kenya",
+    "seed",
+    "company",
+    "maize",
+    "millet",
+    "soghum"
+  ],
+  "author": "dancun_ojumbo",
+  "license": "ISC"
 }
