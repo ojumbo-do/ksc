@@ -43,12 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const communicationCentreDropdown = document.getElementById(
-    "communicationCentreDropdown"
-  );
-  const communicationDropdown = document.getElementById(
-    "communicationDropdown"
-  );
+  const communicationCentreDropdown = document.getElementById("dropdown");
+  const communicationDropdown = document.getElementById("dropdownLargeButton");
 
   communicationCentreDropdown.addEventListener("click", function (event) {
     event.preventDefault();
