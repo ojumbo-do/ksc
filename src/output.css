@@ -1331,10 +1331,6 @@ input[type="range"]::-ms-fill-lower {
   width: 1.5rem;
 }
 
-.w-60 {
-  width: 15rem;
-}
-
 .w-64 {
   width: 16rem;
 }
@@ -1424,12 +1420,20 @@ input[type="range"]::-ms-fill-lower {
   flex-grow: 1;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.list-decimal {
+  list-style-type: decimal;
 }
 
 .list-disc {
@@ -1550,12 +1554,6 @@ input[type="range"]::-ms-fill-lower {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1716,6 +1714,11 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(233 236 239 / var(--tw-bg-opacity));
 }
 
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(198 198 198 / var(--tw-bg-opacity));
+}
+
 .bg-gray-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(134 142 150 / var(--tw-bg-opacity));
@@ -1778,11 +1781,6 @@ input[type="range"]::-ms-fill-lower {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(198 198 198 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/\.\.\/public\/assets\/images\/mature_maize\.jpg\'\)\] {
@@ -1851,6 +1849,11 @@ input[type="range"]::-ms-fill-lower {
   padding: 1.5rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-2\.5 {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -1911,6 +1914,11 @@ input[type="range"]::-ms-fill-lower {
   padding-bottom: 1rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1926,16 +1934,6 @@ input[type="range"]::-ms-fill-lower {
   padding-bottom: 22px;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1946,14 +1944,6 @@ input[type="range"]::-ms-fill-lower {
 
 .pl-3 {
   padding-left: 0.75rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pr-3 {
-  padding-right: 0.75rem;
 }
 
 .pr-4 {
@@ -2088,12 +2078,12 @@ input[type="range"]::-ms-fill-lower {
   line-height: 1;
 }
 
-.leading-tight {
-  line-height: 1.25;
-}
-
 .leading-normal {
   line-height: 1.5;
+}
+
+.leading-tight {
+  line-height: 1.25;
 }
 
 .tracking-tight {
@@ -2659,10 +2649,6 @@ input[type="range"]::-ms-fill-lower {
 
   .md\:flex {
     display: flex;
-  }
-
-  .md\:inline-flex {
-    display: inline-flex;
   }
 
   .md\:grid {
