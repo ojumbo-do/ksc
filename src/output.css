@@ -1283,6 +1283,14 @@ input[type="range"]::-ms-fill-lower {
   min-height: 720px;
 }
 
+.min-h-\[\] {
+  min-height: ;
+}
+
+.min-h-\[450px\] {
+  min-height: 450px;
+}
+
 .\!w-80 {
   width: 20rem !important;
 }
