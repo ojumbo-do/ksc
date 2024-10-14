@@ -4,19 +4,27 @@
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link href="../output.css" rel="stylesheet" />
-    <title>Document</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+    <title>Kenya Seed Compnay</title>
   </head>
+
   <body>
     <!-- Header starts -->
     <header>
       <div class="bg-primary">
         <div
-          class="flex justify-between flex-row text-white max-w-screen-xl mx-auto py-3 items-center"
+          class="flex justify-between flex-col md:flex-row text-white max-w-screen-xl mx-auto flex-grow py-3 items-center"
         >
-          <div class="flex md:gap-5 gap-3">
+          <div
+            class="flex flex-col justify-center text-center md:flex-row md:gap-5 gap-3"
+          >
             <p>Mbegu Plaza , Kijana Wamalwa Street</p>
             <p>+ 254 722 205 144, 726 144 856</p>
-            <p>info@kenyaseed.co.ke</p>
+            <p>info@kenyaseed.com</p>
           </div>
 
           <div class="flex mt-4 py-3 space-x-6 sm:mt-0">
@@ -103,9 +111,9 @@
               </li>
               <li>
                 <button
-                  class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium gap-2.5 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  class="flex relative justify-between items-center py-2 pr-4 pl-3 w-full font-medium gap-2.5 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   data-dropdown-toggle="dropdownNavbar"
-                  id="dropdownNavbarLink"
+                  id="aboutUsDropdownButton"
                 >
                   About us
                   <svg
@@ -126,8 +134,8 @@
                   <!-- Dropdown menu -->
                 </button>
                 <div
-                  class="hidden z-20 w-44 text-left font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
-                  id="dropdownNavbar"
+                  class="hidden absolute z-30 w-44 text-left font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
+                  id="aboutUsDropdown"
                 >
                   <ul
                     aria-labelledby="dropdownLargeButton"
@@ -136,14 +144,14 @@
                     <li>
                       <a
                         class="block py-2 px-4 hover:text-tertiary dark:hover:text-white"
-                        href="#"
+                        href="../pages/about_us.html"
                         >Overview</a
                       >
                     </li>
                     <li>
                       <a
                         class="block py-2 px-4 hover:text-tertiary dark:hover:text-white"
-                        href="#"
+                        href="../pages/the_board.html"
                         >Board of Directors</a
                       >
                     </li>
@@ -175,7 +183,7 @@
               <li>
                 <a
                   class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-primary-500 lg:dark:hover:bg-transparent dark:border-gray-700"
-                  href="#"
+                  href="../pages/products.html"
                   >Products</a
                 >
               </li>
@@ -224,7 +232,7 @@
                     <li>
                       <a
                         class="block py-2 px-4 hover:text-tertiary dark:hover:text-white"
-                        href="#"
+                        href="../pages/events.html"
                         >Events</a
                       >
                     </li>
@@ -238,7 +246,7 @@
                     <li>
                       <a
                         class="block py-2 px-4 hover:text-tertiary dark:hover:text-white"
-                        href="#"
+                        href="../pages/news_updates.html"
                         >News Update</a
                       >
                     </li>
@@ -259,14 +267,14 @@
                     <li>
                       <a
                         class="block py-2 px-4 hover:text-tertiary dark:hover:text-white"
-                        href="#"
+                        href="../pages/tenders.html"
                         >Tenders</a
                       >
                     </li>
                     <li>
                       <a
                         class="block py-2 px-4 hover:text-tertiary dark:hover:text-white"
-                        href="#"
+                        href="../pages/gallery.html"
                         >Gallery</a
                       >
                     </li>
@@ -280,7 +288,7 @@
                     <li>
                       <a
                         class="block py-2 px-4 hover:text-tertiary dark:hover:text-white"
-                        href="#"
+                        href="../pages/csi.html"
                         >CSI</a
                       >
                     </li>
@@ -343,9 +351,9 @@
 
               <li>
                 <button
-                  class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium gap-2.5 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  class="flex relative justify-between items-center py-2 pr-4 pl-3 w-full font-medium gap-2.5 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   data-dropdown-toggle="dropdown"
-                  id="dropdown-button"
+                  id="customerCentreDropdownButton"
                   type="button"
                 >
                   Customer Centre
@@ -367,8 +375,8 @@
                   <!-- Dropdown menu -->
                 </button>
                 <div
-                  class="hidden z-20 w-44 text-left font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
-                  id="dropdown"
+                  class="hidden absolute z-30 w-44 text-left font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
+                  id="customerCentreDropdown"
                 >
                   <ul
                     aria-labelledby="dropdownLargeButton"
@@ -391,7 +399,7 @@
                     <li>
                       <a
                         class="block py-2 px-4 hover:text-tertiary dark:hover:text-white"
-                        href="#"
+                        href="../pages/growers_landing_page.html"
                         >Grower's Portal</a
                       >
                     </li>
@@ -417,7 +425,7 @@
               <li>
                 <a
                   class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-primary-500 lg:dark:hover:bg-transparent dark:border-gray-700"
-                  href="#"
+                  href="../pages/contact_us.html"
                   >Contact</a
                 >
               </li>
