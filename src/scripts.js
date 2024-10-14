@@ -64,3 +64,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+//
+document.addEventListener("DOMContentLoaded", function () {
+  const filterProductsDropdownButton = document.getElementById(
+    "filterProductsDropdownButton"
+  );
+  const filterProductsDropdown = document.getElementById(
+    "filterProductsDropdown"
+  );
+
+  filterProductsDropdownButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    filterProductsDropdown.classList.toggle("hidden");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (
+      !filterProductsDropdownButton.contains(event.target) &&
+      !filterProductsDropdown.contains(event.target)
+    ) {
+      filterProductsDropdown.classList.add("hidden");
+    }
+  });
+});
