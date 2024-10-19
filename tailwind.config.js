@@ -17,10 +17,15 @@ module.exports = {
       colors: {
         primary: {
           DEFAULT: "#0D4929",
-          light: "#F1F8E3",
-          dark: "#0B331B",
+          light: "#106b39",
+          dark: "#023119",
         },
-        secondary: "#2ECC71",
+        secondary: {
+          DEFAULT: "#FBCB00",
+          light: "#ffde0d",
+          dark: "#d19700",
+        },
+
         tertiary: "#FBCB00",
         success: "#2ECC71",
         info: "#3490DC",

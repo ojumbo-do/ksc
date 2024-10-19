@@ -1,90 +1,54 @@
-"strict";
+"use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
-  const communicationCentreDropdown = document.getElementById(
-    "communicationCentreDropdown"
-  );
-  const communicationDropdown = document.getElementById(
-    "communicationDropdown"
-  );
+  const timeNow = document.querySelector("#time-now");
+  const dropdowns = [
+    { buttonId: "about-us__button", dropdownId: "about-us__dropdown" },
+    {
+      buttonId: "communication-centre__button",
+      dropdownId: "communication-centre__dropdown",
+    },
 
-  communicationCentreDropdown.addEventListener("click", function (event) {
-    event.preventDefault();
-    communicationDropdown.classList.toggle("hidden");
-  });
+    {
+      buttonId: "customer-centre__button",
+      dropdownId: "customer-centre__dropdown",
+    },
+    {
+      buttonId: "filterProductsDropdownButton",
+      dropdownId: "filterProductsDropdown",
+    },
+  ];
 
-  document.addEventListener("click", function (event) {
-    if (
-      !communicationCentreDropdown.contains(event.target) &&
-      !communicationDropdown.contains(event.target)
-    ) {
-      communicationDropdown.classList.add("hidden");
+  const currentTime = () => {
+    const date = new Date();
+    const hours = date.getHours().toString().padStart(2, "0");
+    const minutes = date.getMinutes().toString().padStart(2, "0");
+    const seconds = date.getSeconds().toString().padStart(2, "0");
+
+    timeNow.textContent = `${hours}:${minutes}:${seconds}`;
+    setTimeout(currentTime, 1000);
+  };
+
+  const toggleDropdown = (button, dropdown) => {
+    button.addEventListener("click", function (event) {
+      event.preventDefault();
+      dropdown.classList.toggle("hidden");
+    });
+
+    document.addEventListener("click", function (event) {
+      if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+        dropdown.classList.add("hidden");
+      }
+    });
+  };
+
+  dropdowns.forEach(({ buttonId, dropdownId }) => {
+    const button = document.getElementById(buttonId);
+    const dropdown = document.getElementById(dropdownId);
+    if (button && dropdown) {
+      toggleDropdown(button, dropdown);
     }
   });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-  const aboutUsDropdownBtn = document.getElementById("aboutUsDropdownButton");
-  const aboutUsDropdown = document.getElementById("aboutUsDropdown");
-
-  aboutUsDropdownBtn.addEventListener("click", function (event) {
-    event.preventDefault();
-    aboutUsDropdown.classList.toggle("hidden");
-  });
-
-  document.addEventListener("click", function (event) {
-    if (
-      !aboutUsDropdownBtn.contains(event.target) &&
-      !aboutUsDropdown.contains(event.target)
-    ) {
-      aboutUsDropdown.classList.add("hidden");
-    }
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const customerCentreDropdownButton = document.getElementById(
-    "customerCentreDropdownButton"
-  );
-  const customerCentreDropdown = document.getElementById(
-    "customerCentreDropdown"
-  );
-
-  customerCentreDropdownButton.addEventListener("click", function (event) {
-    event.preventDefault();
-    customerCentreDropdown.classList.toggle("hidden");
-  });
-
-  document.addEventListener("click", function (event) {
-    if (
-      !customerCentreDropdownButton.contains(event.target) &&
-      !customerCentreDropdown.contains(event.target)
-    ) {
-      customerCentreDropdown.classList.add("hidden");
-    }
-  });
-});
-
-//
-document.addEventListener("DOMContentLoaded", function () {
-  const filterProductsDropdownButton = document.getElementById(
-    "filterProductsDropdownButton"
-  );
-  const filterProductsDropdown = document.getElementById(
-    "filterProductsDropdown"
-  );
-
-  filterProductsDropdownButton.addEventListener("click", function (event) {
-    event.preventDefault();
-    filterProductsDropdown.classList.toggle("hidden");
-  });
-
-  document.addEventListener("click", function (event) {
-    if (
-      !filterProductsDropdownButton.contains(event.target) &&
-      !filterProductsDropdown.contains(event.target)
-    ) {
-      filterProductsDropdown.classList.add("hidden");
-    }
-  });
+  currentTime();
 });
