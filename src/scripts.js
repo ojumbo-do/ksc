@@ -2,6 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   const timeNow = document.querySelector("#time-now");
+  const slides = document.querySelectorAll(".slide");
   const dropdowns = [
     { buttonId: "about-us__button", dropdownId: "about-us__dropdown" },
     {
@@ -49,6 +50,26 @@ document.addEventListener("DOMContentLoaded", function () {
       toggleDropdown(button, dropdown);
     }
   });
+
+  let currentSlide = 0;
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+  }
+
+  function changeSlide(direction) {
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  showSlide(currentSlide);
+
+  window.changeSlide = changeSlide;
+
+  setInterval(() => {
+    changeSlide(1);
+  }, 15000);
 
   currentTime();
 });
