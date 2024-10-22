@@ -3,13 +3,24 @@
 document.addEventListener("DOMContentLoaded", function () {
   const timeNow = document.querySelector("#time-now");
   const slides = document.querySelectorAll(".slide");
+  const dotsContainer = document.querySelector(".dots-container");
+
+  // Create dots based on the number of slides
+  slides.forEach((_, index) => {
+    const dot = document.createElement("span");
+    dot.classList.add("dot");
+    dot.dataset.index = index;
+    dotsContainer.appendChild(dot);
+  });
+
+  let dots = document.querySelectorAll(".dot");
+
   const dropdowns = [
     { buttonId: "about-us__button", dropdownId: "about-us__dropdown" },
     {
       buttonId: "communication-centre__button",
       dropdownId: "communication-centre__dropdown",
     },
-
     {
       buttonId: "customer-centre__button",
       dropdownId: "customer-centre__dropdown",
@@ -56,12 +67,23 @@ document.addEventListener("DOMContentLoaded", function () {
     slides.forEach((slide, i) => {
       slide.classList.toggle("active", i === index);
     });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
   }
 
   function changeSlide(direction) {
     currentSlide = (currentSlide + direction + slides.length) % slides.length;
     showSlide(currentSlide);
   }
+
+  dots.forEach((dot) => {
+    dot.addEventListener("click", function () {
+      const index = parseInt(this.dataset.index, 10);
+      currentSlide = index;
+      showSlide(currentSlide);
+    });
+  });
 
   showSlide(currentSlide);
 

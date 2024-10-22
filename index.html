@@ -13,6 +13,35 @@
         display: block;
       }
 
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .dot.active {
+        background-color: #fbcb00;
+      }
+
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 3s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
       .prev,
       .next {
         cursor: pointer;
@@ -437,7 +466,7 @@
         class="w-full mx-auto overflow-hidden relative max-w-screen-2xl h-full min-h-[500px]"
       >
         <div
-          class="bg-[url('../../public/assets/images/wheat_plant.jpg')] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white flex items-center justify-center flex-grow min-h-[500px] slide"
+          class="bg-[url('../../public/assets/images/wheat_plant.jpg')] fade p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white flex items-center justify-center flex-grow min-h-[500px] slide"
         >
           <div class="relative h-full w-full mx-auto">
             <div
@@ -459,7 +488,7 @@
         </div>
 
         <div
-          class="bg-[url('../public/assets/images/Maize_field.jpg')] min-h-[500px] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white flex items-center justify-center w-full slide"
+          class="bg-[url('../public/assets/images/Maize_field.jpg')] min-h-[500px] fade p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white flex items-center justify-center w-full slide"
         >
           <div class="relative h-full w-full mx-auto">
             <div
@@ -481,7 +510,7 @@
         </div>
 
         <div
-          class="bg-[url('../public/assets/images/Overlay_Image_BG.png')] min-h-[500px] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white flex items-center justify-center w-full slide"
+          class="bg-[url('../public/assets/images/Overlay_Image_BG.png')] fade min-h-[500px] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white flex items-center justify-center w-full slide"
         >
           <div class="relative h-full w-full mx-auto">
             <div
@@ -503,7 +532,7 @@
         </div>
 
         <div
-          class="bg-[url('../../public/assets/images/wheat_plant.jpg')] min-h-[500px] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white flex items-center justify-center w-full slide"
+          class="bg-[url('../../public/assets/images/wheat_plant.jpg')] fade min-h-[500px] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white flex items-center justify-center w-full slide"
         >
           <div class="relative h-full w-full mx-auto">
             <div
@@ -525,7 +554,7 @@
         </div>
 
         <div
-          class="bg-[url('../../public/assets/images/wheat_plant.jpg')] min-h-[500px] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white flex items-center justify-center w-full slide"
+          class="bg-[url('../../public/assets/images/wheat_plant.jpg')] fade min-h-[500px] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white flex items-center justify-center w-full slide"
         >
           <div class="relative h-full w-full mx-auto">
             <div
@@ -545,6 +574,10 @@
             </div>
           </div>
         </div>
+
+        <div
+          class="text-center dots-container absolute z-50 bottom-0 right-[50%]"
+        ></div>
 
         <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
         <button class="next" onclick="changeSlide(1)">&#10095;</button>
