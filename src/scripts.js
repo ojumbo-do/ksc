@@ -29,6 +29,16 @@ document.addEventListener("DOMContentLoaded", function () {
       buttonId: "filterProductsDropdownButton",
       dropdownId: "filterProductsDropdown",
     },
+
+    {
+      buttonId: "secondary-nav__button",
+      dropdownId: "secondary-nav__menu",
+    },
+
+    {
+      buttonId: "primary-nav__button",
+      dropdownId: "primary-nav__menu",
+    },
   ];
 
   const currentTime = () => {
