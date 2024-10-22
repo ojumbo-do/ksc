@@ -992,16 +992,8 @@ input[type="range"]::-ms-fill-lower {
   bottom: 0px;
 }
 
-.-bottom-24 {
-  bottom: -6rem;
-}
-
-.-top-28 {
-  top: -7rem;
-}
-
-.-top-\[90px\] {
-  top: -90px;
+.bottom-0 {
+  bottom: 0px;
 }
 
 .left-0 {
@@ -1020,6 +1012,10 @@ input[type="range"]::-ms-fill-lower {
   right: 95px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .top-16 {
   top: 4rem;
 }
@@ -1028,20 +1024,8 @@ input[type="range"]::-ms-fill-lower {
   top: 0.75rem;
 }
 
-.top-\[\] {
-  top: ;
-}
-
 .top-\[160px\] {
   top: 160px;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.top-0 {
-  top: 0px;
 }
 
 .z-10 {
@@ -1227,6 +1211,10 @@ input[type="range"]::-ms-fill-lower {
   margin-top: 1.5rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -1328,8 +1316,8 @@ input[type="range"]::-ms-fill-lower {
   min-height: 550px;
 }
 
-.min-h-\[720px\] {
-  min-height: 720px;
+.min-h-\[500px\] {
+  min-height: 500px;
 }
 
 .w-1\/2 {
@@ -1413,12 +1401,8 @@ input[type="range"]::-ms-fill-lower {
   width: 1px;
 }
 
-.w-\[\%\] {
-  width: %;
-}
-
-.w-\[80\%\] {
-  width: 80%;
+.w-3 {
+  width: 0.75rem;
 }
 
 .min-w-0 {
@@ -1613,16 +1597,12 @@ input[type="range"]::-ms-fill-lower {
   gap: 2rem;
 }
 
-.gap-\[30px\] {
-  gap: 30px;
+.gap-9 {
+  gap: 2.25rem;
 }
 
 .gap-\[50px\] {
   gap: 50px;
-}
-
-.gap-9 {
-  gap: 2.25rem;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1737,10 +1717,6 @@ input[type="range"]::-ms-fill-lower {
 
 .border-b {
   border-bottom-width: 1px;
-}
-
-.border-l-\[67px\] {
-  border-left-width: 67px;
 }
 
 .border-r-0 {
@@ -1859,11 +1835,6 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(251 203 0 / var(--tw-bg-opacity));
 }
 
-.bg-tertiary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 203 0 / var(--tw-bg-opacity));
-}
-
 .bg-transparent {
   background-color: transparent;
 }
@@ -1881,52 +1852,12 @@ input[type="range"]::-ms-fill-lower {
   --tw-bg-opacity: 75%;
 }
 
-.bg-\[url\(\'\.\.\/\.\.\/public\/assets\/images\/nerica_rice\.JPG\'\)\] {
-  background-image: url('../../public/assets/images/nerica_rice.JPG');
-}
-
-.bg-\[url\(\'\.\.\/\.\.\/public\/assets\/images\/sorghum_variety\.JPG\'\)\] {
-  background-image: url('../../public/assets/images/sorghum_variety.JPG');
-}
-
-.bg-\[url\(\'\.\.\/\.\.\/public\/assets\/images\/sunflower\.jpg\'\)\] {
-  background-image: url('../../public/assets/images/sunflower.jpg');
-}
-
 .bg-\[url\(\'\.\.\/\.\.\/public\/assets\/images\/wheat_plant\.jpg\'\)\] {
   background-image: url('../../public/assets/images/wheat_plant.jpg');
 }
 
-.bg-\[url\(\'\/home\/klaus\/Documents\/ksc_website_official\/src\/assets\/hero_photos\/wheats-spikes-min\.jpg\'\)\] {
-  background-image: url('/home/klaus/Documents/ksc_website_official/src/assets/hero_photos/wheats-spikes-min.jpg');
-}
-
-.bg-\[url\(\'\.\/src\/assets\/hero_photos\/wheats-spikes-min\.jpg\'\)\] {
-  background-image: url('./src/assets/hero_photos/wheats-spikes-min.jpg');
-}
-
-.bg-\[url\(\'\/home\/klaus\/Documents\/ksc_website_official\/public\/assets\/images\/Maize_field\.jpg\'\)\] {
-  background-image: url('/home/klaus/Documents/ksc_website_official/public/assets/images/Maize_field.jpg');
-}
-
 .bg-\[url\(\'\.\.\/public\/assets\/images\/Maize_field\.jpg\'\)\] {
   background-image: url('../public/assets/images/Maize_field.jpg');
-}
-
-.bg-\[url\(\'\.\.\/\/public\/assets\/images\/Maize_field\.jpg\'\)\] {
-  background-image: url('..//public/assets/images/Maize_field.jpg');
-}
-
-.bg-\[url\(\'\.\.\/\'\)\] {
-  background-image: url('../');
-}
-
-.bg-\[url\(\'\.\.\/\/home\/klaus\/Documents\/ksc_website_official\/public\/assets\/images\/Overlay_Image_BG\.png\'\)\] {
-  background-image: url('..//home/klaus/Documents/ksc_website_official/public/assets/images/Overlay_Image_BG.png');
-}
-
-.bg-\[url\(\'\.\.public\/assets\/images\/Overlay_Image_BG\.png\'\)\] {
-  background-image: url('..public/assets/images/Overlay_Image_BG.png');
 }
 
 .bg-\[url\(\'\.\.\/public\/assets\/images\/Overlay_Image_BG\.png\'\)\] {
@@ -2057,11 +1988,6 @@ input[type="range"]::-ms-fill-lower {
 .py-\[18px\] {
   padding-top: 18px;
   padding-bottom: 18px;
-}
-
-.py-\[22px\] {
-  padding-top: 22px;
-  padding-bottom: 22px;
 }
 
 .pb-10 {
@@ -2354,6 +2280,14 @@ input[type="range"]::-ms-fill-lower {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-opacity {
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2362,14 +2296,6 @@ input[type="range"]::-ms-fill-lower {
 
 .transition-transform {
   transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -2495,10 +2421,6 @@ input[type="range"]::-ms-fill-lower {
 .focus\:ring-gray-300:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(198 198 198 / var(--tw-ring-opacity));
-}
-
-.active\:block:active {
-  display: block;
 }
 
 .active\:bg-primary-light:active {
@@ -2780,18 +2702,6 @@ input[type="range"]::-ms-fill-lower {
 }
 
 @media (min-width: 768px) {
-  .md\:absolute {
-    position: absolute;
-  }
-
-  .md\:-top-8 {
-    top: -2rem;
-  }
-
-  .md\:right-0 {
-    right: 0px;
-  }
-
   .md\:order-1 {
     order: 1;
   }
@@ -2857,24 +2767,16 @@ input[type="range"]::-ms-fill-lower {
     width: 8rem;
   }
 
-  .md\:w-\[80\%\] {
-    width: 80%;
-  }
-
-  .md\:w-auto {
-    width: auto;
-  }
-
   .md\:w-\[50\%\] {
     width: 50%;
   }
 
-  .md\:w-\[70\%\] {
-    width: 70%;
-  }
-
   .md\:w-\[60\%\] {
     width: 60%;
+  }
+
+  .md\:w-auto {
+    width: auto;
   }
 
   .md\:max-w-md {
@@ -2981,15 +2883,6 @@ input[type="range"]::-ms-fill-lower {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .md\:text-\[80px\] {
-    font-size: 80px;
-  }
-
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .md\:hover\:bg-transparent:hover {

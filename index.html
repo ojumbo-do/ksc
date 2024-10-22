@@ -51,7 +51,7 @@
     <header class="items-centre flex flex-col text-white text-base font-medium">
       <nav class="bg-primary w-full" aria-label="Main navigation">
         <div
-          class="p-4 grid grid-cols-[auto_1fr_auto] mx-auto max-w-screen-2xl gap-10 w-full"
+          class="p-3 grid grid-cols-[auto_1fr_auto] mx-auto max-w-screen-2xl gap-10 w-full"
         >
           <div class="items-center flex">
             <a href="index.html">
@@ -245,336 +245,313 @@
             </li>
           </ul>
 
-          <div class="flex flex-col justify-end gap-2 items-stretch">
-            <p class="text-end" id="time-now">12:00</p>
-
-            <form class="items-center flex flex-row">
-              <input
-                type="search"
-                class="rounded-md text-black py-1 px-2 text-sm"
-                placeholder="Search..."
-                name="search"
-                id=""
-              />
-            </form>
-          </div>
+          <form class="items-center flex flex-row">
+            <input
+              type="search"
+              class="rounded-md text-black py-1 px-2 text-sm"
+              placeholder="Search..."
+              name="search"
+              id=""
+            />
+          </form>
         </div>
       </nav>
 
-      <!-- <div class="bg-secondary opacity-[50%] blur-md justify-between">
-        <div class="max-w-screen-2xl w-full mx-auto">
-          <div>
-            <div><a href="">android</a></div>
-            <div><a href="">ios</a></div>
+      <div class="bg-secondary bg-opacity-[50%] w-full text-primary">
+        <div
+          class="max-w-screen-2xl mx-auto px-3 py-2 flex flex-row justify-between items-center"
+        >
+          <div class="flex flex-row gap-4 flex-grow">
+            <div class="">
+              <a
+                href=""
+                class="px-4 py-1 border items-center rounded-md hover:text-white text-sm flex flex-row gap-3 border-primary hover:bg-primary-dark"
+                ><img
+                  src="./src/assets/logos/app-store.svg"
+                  alt="app store"
+                  class="w-3 hover:text-white"
+                />
+
+                <span> App Store </span>
+              </a>
+            </div>
+
+            <div>
+              <a
+                href=""
+                class="px-4 py-1 text-sm border rounded-md flex flex-row gap-3 hover:text-white border-primary hover:bg-primary-dark"
+                ><img
+                  src="./src/assets/logos/playstore.svg"
+                  alt="playstore"
+                  class="w-3 hover:text-white"
+                />
+                Playstore</a
+              >
+            </div>
           </div>
-          <div></div>
+
+          <div class="flex flex-row gap-4 text-sm">
+            <nav aria-label="Secondary navigation">
+              <ul class="flex flex-row divide-primary capitalize items-center">
+                <li class="py-2 px-4 font-medium">
+                  <a
+                    href="home.html"
+                    class="flex flex-row gap-1 items-center text-sm"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+
+                    wishlist
+                  </a>
+                </li>
+
+                <hr class="w-[2px] h-5 items-center bg-primary" />
+
+                <li class="py-2 px-4 font-medium">
+                  <a href="about.html" class="flex items-center flex-row gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                      />
+                    </svg>
+
+                    checkout
+                  </a>
+                </li>
+
+                <hr class="w-[2px] h-5 items-center bg-primary" />
+
+                <li class="py-2 px-4 font-medium">
+                  <a
+                    href="branches.html"
+                    class="flex items-center flex-row gap-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                      />
+                    </svg>
+
+                    cart <span>()</span>
+                  </a>
+                </li>
+
+                <hr class="w-[2px] h-5 items-center bg-primary" />
+
+                <li class="py-2 px-4 font-medium">
+                  <a
+                    href="partners.html"
+                    class="flex items-center flex-row gap-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
+                      />
+                    </svg>
+
+                    member login
+                  </a>
+                </li>
+
+                <hr class="w-[2px] h-5 items-center bg-primary" />
+              </ul>
+            </nav>
+
+            <div class="flex flex-row items-center gap-4">
+              <div class="flex flex-row gap-2 px-4 items-center">
+                <div>
+                  <a href="" class="hover:text-primary-dark">
+                    <img
+                      src="./src/assets/logos/whatsapp.svg"
+                      alt="whatsapp"
+                      class="w-5"
+                    />
+                  </a>
+                </div>
+
+                <div>
+                  <a href="" class="hover:text-primary-dark">
+                    <img
+                      src="./src/assets/logos/facebook.svg"
+                      alt="facebook"
+                      class="w-5"
+                    />
+                  </a>
+                </div>
+
+                <div>
+                  <a href="" class="hover:text-primary-dark">
+                    <img
+                      src="./src/assets/logos/instagram.svg"
+                      alt="instagram"
+                      class="w-5"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="items-center">KIS | ENG</div>
+            </div>
+          </div>
         </div>
-      </div> -->
+      </div>
     </header>
     <!-- Header ends -->
 
-    <!-- bg-[#0D492999] -->
-
     <!-- main here -->
-    <main class="flex gap-10 flex-col pb-10">
-      <section class="relative">
+    <main class="flex gap-10 mt-3 flex-col pb-10">
+      <section
+        class="w-full mx-auto overflow-hidden relative max-w-screen-2xl h-full min-h-[500px]"
+      >
         <div
-          class="bg-secondary bg-opacity-[50%] absolute w-full z-30 text-primary"
+          class="bg-[url('../../public/assets/images/wheat_plant.jpg')] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white flex items-center justify-center flex-grow min-h-[500px] slide"
         >
-          <div
-            class="max-w-screen-2xl mx-auto p-4 flex flex-row justify-between items-center"
-          >
-            <div class="flex flex-row gap-4 flex-grow">
-              <div class="">
-                <a
-                  href=""
-                  class="px-4 py-2 border rounded-md hover:text-white flex flex-row gap-3 border-primary hover:bg-primary-dark"
-                  ><img
-                    src="./src/assets/logos/app-store.svg"
-                    alt="app store"
-                    class="w-5 hover:text-white"
-                  />
+          <div class="relative h-full w-full mx-auto">
+            <div
+              class="flex flex-col gap-6 text-start max-h-[290px] bg-secondary bg-opacity-[75%] top-[160px] max-w-[500px] px-9 py-8 absolute rounded-md right-[95px]"
+            >
+              <h1 class="text-2xl font-bold text-primary">
+                Quality Maize Seeds for a Bountiful Harvest
+              </h1>
 
-                  <span> App Store </span>
+              <div
+                class="mt-5 px-4 py-2.5 text-white rounded-md text-base font-semibold w-fit bg-primary hover:bg-primary-dark capitalize"
+              >
+                <a href="#" class="block w-full h-full" type="button">
+                  discover more
                 </a>
-              </div>
-
-              <div>
-                <a
-                  href=""
-                  class="px-4 py-2 border rounded-md flex flex-row gap-3 hover:text-white border-primary hover:bg-primary-dark"
-                  ><img
-                    src="./src/assets/logos/playstore.svg"
-                    alt="playstore"
-                    class="w-5 hover:text-white"
-                  />
-                  Playstore</a
-                >
-              </div>
-            </div>
-
-            <div class="flex flex-row gap-4">
-              <nav aria-label="Secondary navigation">
-                <ul
-                  class="flex flex-row divide-primary capitalize items-center"
-                >
-                  <li class="py-2 px-4 font-medium">
-                    <a
-                      href="home.html"
-                      class="flex flex-row gap-1 items-center text-sm"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        class="size-5"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-
-                      wishlist
-                    </a>
-                  </li>
-
-                  <hr class="w-[2px] h-5 items-center bg-primary" />
-
-                  <li class="py-2 px-4 font-medium">
-                    <a
-                      href="about.html"
-                      class="flex items-center flex-row gap-1"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-5"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
-                        />
-                      </svg>
-
-                      checkout
-                    </a>
-                  </li>
-
-                  <hr class="w-[2px] h-5 items-center bg-primary" />
-
-                  <li class="py-2 px-4 font-medium">
-                    <a
-                      href="branches.html"
-                      class="flex items-center flex-row gap-1"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-5"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                        />
-                      </svg>
-
-                      cart <span>()</span>
-                    </a>
-                  </li>
-
-                  <hr class="w-[2px] h-5 items-center bg-primary" />
-
-                  <li class="py-2 px-4 font-medium">
-                    <a
-                      href="partners.html"
-                      class="flex items-center flex-row gap-1"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-5"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
-                        />
-                      </svg>
-
-                      member login
-                    </a>
-                  </li>
-
-                  <hr class="w-[2px] h-5 items-center bg-primary" />
-                </ul>
-              </nav>
-
-              <div class="flex flex-row items-center gap-4">
-                <div class="flex flex-row gap-2 px-4 items-center">
-                  <div>
-                    <a href="" class="hover:text-primary-dark">
-                      <img
-                        src="./src/assets/logos/whatsapp.svg"
-                        alt="whatsapp"
-                        class="w-5"
-                      />
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="" class="hover:text-primary-dark">
-                      <img
-                        src="./src/assets/logos/facebook.svg"
-                        alt="facebook"
-                        class="w-5"
-                      />
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="" class="hover:text-primary-dark">
-                      <img
-                        src="./src/assets/logos/instagram.svg"
-                        alt="instagram"
-                        class="w-5"
-                      />
-                    </a>
-                  </div>
-                </div>
-
-                <div class="items-center">KIS | ENG</div>
               </div>
             </div>
           </div>
         </div>
 
-        <article class="w-full m-auto overflow-hidden">
-          <div
-            class="bg-[url('../../public/assets/images/wheat_plant.jpg')] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white min-h-[550px] flex items-center justify-center w-full slide"
-          >
-            <div class="max-w-screen-2xl relative h-full w-full mx-auto">
-              <div
-                class="flex flex-col gap-6 text-start max-h-[290px] bg-secondary bg-opacity-[75%] top-[160px] max-w-[500px] px-9 py-8 absolute rounded-md right-[95px]"
-              >
-                <h1 class="text-2xl font-bold">
-                  Quality Maize Seeds for a Bountiful Harvest
-                </h1>
+        <div
+          class="bg-[url('../public/assets/images/Maize_field.jpg')] min-h-[500px] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white flex items-center justify-center w-full slide"
+        >
+          <div class="relative h-full w-full mx-auto">
+            <div
+              class="flex flex-col gap-6 text-start max-h-[290px] bg-secondary bg-opacity-[75%] top-[160px] max-w-[500px] px-9 py-8 absolute rounded-md right-[95px]"
+            >
+              <h1 class="text-2xl font-bold text-primary">
+                Sustainable Farming Starts with Superior Seeds
+              </h1>
 
-                <div
-                  class="mt-5 px-4 py-2.5 text-white rounded-md text-base font-semibold w-fit bg-primary hover:bg-primary-dark capitalize"
-                >
-                  <a href="#" class="block w-full h-full" type="button">
-                    discover more
-                  </a>
-                </div>
+              <div
+                class="mt-5 px-4 py-2.5 text-white rounded-md text-base font-semibold w-fit bg-primary hover:bg-primary-dark capitalize"
+              >
+                <a href="#" class="block w-full h-full" type="button">
+                  discover more
+                </a>
               </div>
             </div>
           </div>
+        </div>
 
-          <div
-            class="bg-[url('../public/assets/images/Maize_field.jpg')] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white min-h-[550px] flex items-center justify-center w-full slide"
-          >
-            <div class="max-w-screen-2xl relative h-full w-full mx-auto">
+        <div
+          class="bg-[url('../public/assets/images/Overlay_Image_BG.png')] min-h-[500px] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white flex items-center justify-center w-full slide"
+        >
+          <div class="relative h-full w-full mx-auto">
+            <div
+              class="flex flex-col gap-6 text-start max-h-[290px] bg-secondary bg-opacity-[75%] top-[160px] max-w-[500px] px-9 py-8 absolute rounded-md right-[95px]"
+            >
+              <h1 class="text-2xl font-bold text-primary">
+                Your Trusted Source for Certified Seeds
+              </h1>
+
               <div
-                class="flex flex-col gap-6 text-start max-h-[290px] bg-secondary bg-opacity-[75%] top-[160px] max-w-[500px] px-9 py-8 absolute rounded-md right-[95px]"
+                class="mt-5 px-4 py-2.5 text-white rounded-md text-base font-semibold w-fit bg-primary hover:bg-primary-dark capitalize"
               >
-                <h1 class="text-2xl font-bold">
-                  Sustainable Farming Starts with Superior Seeds
-                </h1>
-
-                <div
-                  class="mt-5 px-4 py-2.5 text-white rounded-md text-base font-semibold w-fit bg-primary hover:bg-primary-dark capitalize"
-                >
-                  <a href="#" class="block w-full h-full" type="button">
-                    discover more
-                  </a>
-                </div>
+                <a href="#" class="block w-full h-full" type="button">
+                  discover more
+                </a>
               </div>
             </div>
           </div>
+        </div>
 
-          <div
-            class="bg-[url('../public/assets/images/Overlay_Image_BG.png')] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white min-h-[550px] flex items-center justify-center w-full slide"
-          >
-            <div class="max-w-screen-2xl relative h-full w-full mx-auto">
+        <div
+          class="bg-[url('../../public/assets/images/wheat_plant.jpg')] min-h-[500px] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white flex items-center justify-center w-full slide"
+        >
+          <div class="relative h-full w-full mx-auto">
+            <div
+              class="flex flex-col gap-6 text-start max-h-[290px] bg-secondary bg-opacity-[75%] top-[160px] max-w-[500px] px-9 py-8 absolute rounded-md right-[95px]"
+            >
+              <h1 class="text-2xl font-bold text-primary">
+                Quality Maize Seeds for a Bountiful Harvest
+              </h1>
+
               <div
-                class="flex flex-col gap-6 text-start max-h-[290px] bg-secondary bg-opacity-[75%] top-[160px] max-w-[500px] px-9 py-8 absolute rounded-md right-[95px]"
+                class="mt-5 px-4 py-2.5 text-white rounded-md text-base font-semibold w-fit bg-primary hover:bg-primary-dark capitalize"
               >
-                <h1 class="text-2xl font-bold">
-                  Your Trusted Source for Certified Seeds
-                </h1>
-
-                <div
-                  class="mt-5 px-4 py-2.5 text-white rounded-md text-base font-semibold w-fit bg-primary hover:bg-primary-dark capitalize"
-                >
-                  <a href="#" class="block w-full h-full" type="button">
-                    discover more
-                  </a>
-                </div>
+                <a href="#" class="block w-full h-full" type="button">
+                  discover more
+                </a>
               </div>
             </div>
           </div>
+        </div>
 
-          <div
-            class="bg-[url('../../public/assets/images/wheat_plant.jpg')] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white min-h-[550px] flex items-center justify-center w-full slide"
-          >
-            <div class="max-w-screen-2xl relative h-full w-full mx-auto">
+        <div
+          class="bg-[url('../../public/assets/images/wheat_plant.jpg')] min-h-[500px] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white flex items-center justify-center w-full slide"
+        >
+          <div class="relative h-full w-full mx-auto">
+            <div
+              class="flex flex-col gap-6 text-start max-h-[290px] bg-secondary bg-opacity-[75%] top-[160px] max-w-[500px] px-9 py-8 absolute rounded-md right-[95px]"
+            >
+              <h1 class="text-2xl font-bold text-primary">
+                Quality Maize Seeds for a Bountiful Harvest
+              </h1>
+
               <div
-                class="flex flex-col gap-6 text-start max-h-[290px] bg-secondary bg-opacity-[75%] top-[160px] max-w-[500px] px-9 py-8 absolute rounded-md right-[95px]"
+                class="mt-5 px-4 py-2.5 text-white rounded-md text-base font-semibold w-fit bg-primary hover:bg-primary-dark capitalize"
               >
-                <h1 class="text-2xl font-bold">
-                  Quality Maize Seeds for a Bountiful Harvest
-                </h1>
-
-                <div
-                  class="mt-5 px-4 py-2.5 text-white rounded-md text-base font-semibold w-fit bg-primary hover:bg-primary-dark capitalize"
-                >
-                  <a href="#" class="block w-full h-full" type="button">
-                    discover more
-                  </a>
-                </div>
+                <a href="#" class="block w-full h-full" type="button">
+                  discover more
+                </a>
               </div>
             </div>
           </div>
+        </div>
 
-          <div
-            class="bg-[url('../../public/assets/images/wheat_plant.jpg')] p-5 bg-no-repeat bg-cover bg-center bg-blend-multiply text-white min-h-[550px] flex items-center justify-center w-full slide"
-          >
-            <div class="max-w-screen-2xl relative h-full w-full mx-auto">
-              <div
-                class="flex flex-col gap-6 text-start max-h-[290px] bg-secondary bg-opacity-[75%] top-[160px] max-w-[500px] px-9 py-8 absolute rounded-md right-[95px]"
-              >
-                <h1 class="text-2xl font-bold">
-                  Quality Maize Seeds for a Bountiful Harvest
-                </h1>
-
-                <div
-                  class="mt-5 px-4 py-2.5 text-white rounded-md text-base font-semibold w-fit bg-primary hover:bg-primary-dark capitalize"
-                >
-                  <a href="#" class="block w-full h-full" type="button">
-                    discover more
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-          <button class="next" onclick="changeSlide(1)">&#10095;</button>
-        </article>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
       </section>
 
       <section
@@ -633,7 +610,7 @@
 
       <!--      Products Cards -->
       <section
-        class="bg-gray-50 antialiased dark:bg-gray-900 gap-5 md:py-12 md:border-l-[67px] border-primary flex flex-col items-center justify-center text-center mt-20 p-5"
+        class="bg-gray-50 antialiased dark:bg-gray-900 gap-5 md:py-12 md:border-l-[67px] border-primary flex flex-col items-center justify-center text-center p-5"
       >
         <div class="max-w-[860px]">
           <h3 class="uppercase text-tertiary">our products</h3>
@@ -1004,7 +981,8 @@
               </div>
             </div>
           </div>
-          <div class="w-full text-center">
+
+          <div class="w-full text-center p-3">
             <a
               href="./src/pages/products.html"
               class="rounded-lg border border-gray-200 text-sm font-medium hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700 bg-primary text-white py-[18px] px-[52px] w-fit"
